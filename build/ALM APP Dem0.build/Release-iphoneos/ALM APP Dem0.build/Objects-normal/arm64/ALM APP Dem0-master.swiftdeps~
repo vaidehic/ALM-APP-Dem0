@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "9e8cd2f47fa5bffaa2d5f1d6430e0159000144802488b8b4303a0b42cd3ea3f4"
+build_start_time: [1695195342, 584704000]
+build_end_time: [1695195342, 618394000]
+inputs:
+  "/Users/administrator/Desktop/Gitlab/ALM APP Dem0/ALM APP Dem0/ALM_APP_Dem0App.swift": !dirty [1695187680, 725657237]
+  "/Users/administrator/Desktop/Gitlab/ALM APP Dem0/ALM APP Dem0/ContentView.swift": !dirty [1695187680, 731130617]

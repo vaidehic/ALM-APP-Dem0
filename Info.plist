@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+
+<dict>
+    <key>method</key>
+    <string>ad-hoc</string>
+    <key>provisioningProfiles</key>
+    <dict>
+        <key>almapp.cybage.com</key>
+        <string>1bf5d7c8-434e-42be-893d-41b9f9e2e6b7</string>
+    </dict>
+       <key>signingCertificate</key>
+       <string>Apple Distribution: CYBAGE SOFTWARE, INC. (VB78Y67GX6)</string>
+
+       <key>teamID</key>
+       <string>VB78Y67GX6</string>
+
+       <key>signingStyle</key>
+       <string>manual</string>
+</dict>
+</plist>
+
+</plist>
