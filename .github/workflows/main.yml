@@ -21,4 +21,4 @@ jobs:
 
         - name: Build and test
           run: |
-            xcodebuild -workspace ALM\ APP\ Dem0.xcworkspace -scheme ALM\ APP\ Dem0 -destination "platform=iOS Simulator,OS=15.0,name=iPhone 13" clean test | xcpretty -c
+             - xcodebuild -project ALM\ APP\ Dem0.xcodeproj -scheme ALM\ APP\ Dem0 -configuration Debug 
