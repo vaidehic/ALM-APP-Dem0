@@ -10,18 +10,15 @@ jobs:
     runs-on: self-hosted
     
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+        - name: check Xcode version
+          run: /usr/bin/xcodebuild -version
 
-    - name: Set up Xcode
-      uses: actions/setup-xcode@v2
-      with:
-        xcode-version: '14.x' # Specify the Xcode version you want to use
+        - name: checkout repository
+          uses: actions/checkout@v3
+    
+        # - name: Install dependencies
+        #   run: |brew install swiftlint 
 
-    - name: Install dependencies
-      run: |
-        brew install swiftlint 
-
-    - name: Build and test
-      run: |
-        xcodebuild -workspace ALM\ APP\ Dem0.xcworkspace -scheme ALM\ APP\ Dem0 -destination "platform=iOS Simulator,OS=15.0,name=iPhone 13" clean test | xcpretty -c
+        - name: Build and test
+          run: |
+            xcodebuild -workspace ALM\ APP\ Dem0.xcworkspace -scheme ALM\ APP\ Dem0 -destination "platform=iOS Simulator,OS=15.0,name=iPhone 13" clean test | xcpretty -c
