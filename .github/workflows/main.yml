@@ -21,7 +21,7 @@ jobs:
 
         -  name: build archive
            run: |
-                xcodebuild -scheme "ALM\ APP\ Dem0" \
+                xcodebuild -scheme "ALM APP Dem0" \
                 -archivePath ALM\ APP\ Dem0.xcarchive \
                 -sdk iphoneos \
                 -configuration Debug \
