@@ -16,8 +16,8 @@ jobs:
         - name: checkout repository
           uses: actions/checkout@v3
     
-        # - name: Install dependencies
-        #   run: |brew install swiftlint 
+        - name: Install dependencies
+          run:  brew install swiftlint 
 
         -  name: build archive
            run: |
@@ -28,12 +28,8 @@ jobs:
                 -destination generic/platform=iOS \
                 clean archive
 
-        -  name: Upload application
-           uses: actions/upload-artifact@v3
-           with:
-               name: app
-               path: ALM\ APP\ Dem0/build/ALM\ APP\ Dem0.ipa
-            # you can also archive the entire directory 
-           # path: ${{ runner.temp }}/build
-         
+        - name: swiftlint
+          run: swiftlint lint --reporter html > swiftlint-report.html || true
+
+       
                 
