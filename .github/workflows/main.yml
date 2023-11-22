@@ -27,3 +27,13 @@ jobs:
                 -configuration Debug \
                 -destination generic/platform=iOS \
                 clean archive
+
+        -  name: Upload application
+           uses: actions/upload-artifact@v3
+           with:
+               name: app
+               path: ALM\ APP\ Dem0/build/ALM\ APP\ Dem0.ipa
+            # you can also archive the entire directory 
+           # path: ${{ runner.temp }}/build
+         
+                
