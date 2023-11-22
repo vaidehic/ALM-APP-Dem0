@@ -29,6 +29,9 @@ jobs:
 
         - name: swiftlint
           run: swiftlint lint --reporter html > swiftlint-report.html || true
+
+        - name: Slather
+          run: slather coverage --html --scheme ALM\ APP\ Dem0 --workspace ALM\ APP\ Dem0.xcworkspace/ --output-directory coverage ALM\ APP\ Dem0.xcodeproj
           
 
        
