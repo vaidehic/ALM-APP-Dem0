@@ -19,6 +19,11 @@ jobs:
         # - name: Install dependencies
         #   run: |brew install swiftlint 
 
-        - name: Build and test
-          run: |
-             - xcodebuild -project ALM\ APP\ Dem0.xcodeproj -scheme ALM\ APP\ Dem0 -configuration Debug 
+        -  name: build archive
+           run: |
+                xcodebuild -scheme "ALM\ APP\ Dem0" \
+                -archivePath ALM\ APP\ Dem0.xcarchive \
+                -sdk iphoneos \
+                -configuration Debug \
+                -destination generic/platform=iOS \
+                clean archive
