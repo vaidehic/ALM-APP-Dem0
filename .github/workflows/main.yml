@@ -28,10 +28,10 @@ jobs:
                 clean archive
 
         - name: swiftlint
-          run: swiftlint lint --reporter html > swiftlint-report.html || true
+          run: swiftlint lint 
 
         - name: Slather
-          run: slather coverage --html --scheme ALM\ APP\ Dem0 --workspace ALM\ APP\ Dem0.xcworkspace/ --output-directory coverage ALM\ APP\ Dem0.xcodeproj
+          run: slather coverage --html --scheme ALM\ APP\ Dem0 --workspace ALM\ APP\ Dem0.xcworkspace/ 
           
 
        
