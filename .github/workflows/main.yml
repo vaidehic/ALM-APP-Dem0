@@ -31,7 +31,7 @@ jobs:
           run: swiftlint lint 
 
         - name: Slather
-          run: slather coverage --html --scheme ALM\ APP\ Dem0 --workspace ALM\ APP\ Dem0.xcworkspace/ 
+          run: slather coverage --html --scheme ALM\ APP\ Dem0 --workspace ALM\ APP\ Dem0.xcworkspace/  ALM\ APP\ Dem0.xcodeproj
           
 
        
